@@ -1,0 +1,241 @@
+/* RESET BROWSER DEFAULTS */
+body, h1, h2, h3, h4, h5, h6, p, a, ul, li, button {margin:0;padding:0;}
+ul {list-style:none;}
+
+/* GENERAL STYLES */
+body {
+}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+button {}
+
+
+/* - - - SITE HEADER - - - */
+.site-header {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+.logo {
+    width: 25vh;
+}
+
+
+/* - - - MENU - - - */
+.menu {
+    width: 100vw;
+    border-bottom: 0.2rem solid rgb(239, 62, 53);
+}
+.menu__list {
+    padding: 5px 4%;
+    display: flex;
+    top: 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__item a {
+    text-decoration: none;
+    color: rgb(239, 62, 53);
+    font-family: Roboto Slab;
+    font-weight: 500;
+    transition: 1s;
+}
+.menu__item a:hover {
+    font-weight: 600;
+    color: darkred;
+}
+.menu__link {}
+
+
+
+/* - - - HERO - - - */
+.hero {}
+.hero__heading {
+    font-family: Roboto Slab;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(239, 62, 53);
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.hero__subheading {
+    color: rgb(239, 62, 53);
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    text-align: center;
+    font-family: Roboto Slab;
+    font-weight: 400;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.hero__image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+
+
+/* - - - POPULAR PRODUCTS - - - */
+.popular-products {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 0.5rem;
+}
+.product {
+    background-color: rgb(240, 240, 240);
+    font-family: Roboto Slab;
+    display: grid;
+    max-width: 20vw;
+    text-align: center;
+    padding: 1rem;
+    align-content: space-between;
+}
+
+.product__image {
+    max-width: 20vw;
+}
+.product__category {
+    font-weight: 600;
+}
+.product__name {
+    font-weight: 400;
+}
+.product__price {
+    font-weight: 600;
+}
+.product__add-to-cart {
+    height: 1.5rem;
+}
+.product__add-to-cart--choice {}
+
+.categories {
+    font-family: Roboto Slab;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 0.5rem;
+}
+.category1 {
+    background-image: url(images/category_horse.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-top: 5vh;
+    height: 30vh;
+    text-align: center;
+}
+.category2 {
+    background-image: url(images/category_beef.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+    margin-top: 5vh;
+    height: 30vh;
+    text-align: center;
+}
+
+.category__name {
+    padding-bottom: 25vh;
+}
+.buy-now {
+    margin-bottom: 0;
+}
+.category__description {
+    width: 15vw;
+    padding-bottom: 1rem;
+}
+.gallery {
+    padding-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery__headline {
+    position: absolute;
+    background-color: white;
+    color: rgb(239, 62, 53);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 24vh;
+    font-family: roboto slab;
+    font-weight: 400;
+}
+.gallery__image {
+    object-fit: cover;
+    width: 20%;
+    height: 20%;
+    vertical-align: middle;
+    border-radius: 1rem;
+}
+
+.site-footer {
+    width: 96vw;
+    display: grid;
+    grid-template-areas:
+    "quick hours smilie"
+    ".  copyright  ."
+    ;
+    justify-content: space-evenly;
+    gap: 1rem;
+    background-color: white;
+    border-top: 0.2rem solid rgb(239, 62, 53);
+    margin-top: 10vh;
+    padding: 2rem;
+    font-family: Roboto Slab;
+}
+
+.footer-links{
+    display: grid;
+    gap: 1rem
+}
+.footer-links__headline{
+    color: rgb(239, 62, 53);
+}
+.quick-links{
+   grid-area: quick;
+}
+
+.quick-links__item{}
+
+.quick-links__link{
+    text-decoration: none;
+}
+
+.categories-links{}
+.categories-link__item{}
+
+.categories-links__link{
+    text-decoration: none;  
+}
+
+.opening-hours{
+    grid-area: hours;
+}
+.opening-hours-table{}
+.site-footer__smilie{
+    grid-area: smilie;
+}
+.site-footer__copyright{
+    grid-area: copyright;
+}

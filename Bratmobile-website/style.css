@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sigmar+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
+/* body */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/brackbrat3.svg);
+    background-color: #641867;
+    background-size: 100vw;
+    background-size: cover;
+    width: 100vw;
+}
+
+/* header- texten */
+
+a {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* header */
+
+.header {
+    background-color: #411243;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: relative;
+    width: 100vw;
+    z-index: 3;
+
+}
+
+/* header- ul- listen */
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #411243;
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.header ul a:hover {
+    background-color: white;
+    color: #411243;
+}
+
+/* header- logo */
+
+.header .img-logo {
+    height: 50px;
+    width: auto;
+    padding: 10px 20px;
+    float: right;
+    display: block;
+    font-size: 2em;
+
+}
+
+/* header- hamburger-menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+
+}
+
+/* header- hamburger- menu/ stregerne */
+
+.header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+/* chek-box væk */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 300px;
+}
+
+/* header- hamburger- menu animation- så det bliver til et kryds/ stregerne */
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.frontpage__video {
+    position: relative;
+    width: 100%;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* album-musik */
+
+.mostpopular__title h1,
+.gallery__title h1 {
+    font-family: "Sigmar One";
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    background-color: #411243;
+    margin: 1rem 0 0;
+    padding: 1rem;
+    width: 100vw;
+}
+
+.mostpopular {
+    margin: 0 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mostpopular h1 {
+    font-family: "Sigmar One";
+    line-height: 1.6rem;
+    font-size: 1.5rem;
+}
+
+.cover_right {
+    background-color: #411243;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cover_left {
+    margin: 1rem 0 1rem;
+    background-color: #411243;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    justify-items: center;
+    padding: 1rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cover_left1 {
+    display: none;
+}
+
+.cover_left img {
+    margin: 1rem 0 1rem;
+    width: 200px;
+    justify-self: center;
+    grid-row: span 2;
+}
+
+.albumimg {
+    margin: 1rem 0 1rem;
+    width: 200px;
+    grid-row: span 2;
+    align-self: center;
+    border: 4px solid rgb(170, 36, 133);
+}
+
+.listennow {
+    border: 2px solid white;
+    width: 35vw;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 0.5rem 0.3rem 0.5rem;
+    font-family: "Sigmar One";
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    margin: 0 0 1rem;
+    transition: 0.7s;
+}
+
+.listennow:hover {
+    background-color: white;
+    color: #661053FA;
+}
+
+.cover_left a {
+    text-decoration: none;
+    color: white;
+}
+
+.cover_right a {
+    text-decoration: none;
+    justify-self: center;
+    color: white;
+}
+
+/* .cover_right h2 {
+    text-align: right;
+    font-family: "Sigmar One";
+    font-size: 1.5rem;
+} */
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+/* gallery */
+
+.gallery_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.viewgallery {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 0.75rem 1.5rem 0.5rem;
+    transition: 0.5s;
+}
+
+.viewgallery:hover {
+    background-color: white;
+    color: #411243;
+}
+
+/* gallery- forside */
+
+.frontpage__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    margin-bottom: 1rem;
+    transition: 0.7s;
+}
+
+.frontpage__gallery:hover {
+    opacity: 40%;
+}
+
+.frontpage__gallery_img {
+    width: 100%;
+    height: 100px;
+
+    background-color: black;
+    object-fit: cover;
+}
+
+/* footer */
+
+.upperfooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #411243;
+    justify-items: center;
+    width: 100vw;
+}
+
+.underfooter {
+    background-color: #411243;
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+}
+
+/* footer__links */
+
+.footer__links {
+    color: white;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer__links li {
+    padding: 0.5rem;
+}
+
+.footer__links li a {
+    opacity: 100%;
+    transition: 0.4s;
+}
+
+.footer__links li a:hover {
+    opacity: 40%;
+}
+
+.footer__some img {
+    width: 50px;
+    padding: 0 0.5rem;
+}
+
+.footer__some li {
+    display: inline-block;
+}
+
+.footer__some li a {
+    opacity: 100%;
+    transition: 0.4s;
+}
+
+.footer__some li a:hover {
+    opacity: 40%;
+}
+
+
+/* music.html page */
+.albumtitle, .albumtitle2 {
+    font-family: "Sigmar One";
+}
+.afspil_musik {
+    justify-self: center;
+}
+
+.afspil_musik img {
+    width: 45px;
+    padding-left: 0.2rem;
+}
+
+.afspil_musik li a {
+    opacity: 100%;
+    padding: 0.5rem;
+    transition: 0.4s;
+}
+
+.afspil_musik li a:hover {
+    opacity: 40%;
+}
+
+.afspil_musik li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+/* gallery.html style sheet  */
+.gallery__section {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    background-color: black;
+    margin: 0 0 1rem;
+    transition: 0.7s;
+}
+
+.gallery_img {
+    border: 4px solid rgb(170, 36, 133);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 100%;
+    transition: 0.7s;
+}
+
+.gallery_img:hover {
+    opacity: 100%;
+}
+
+/* about.html*/
+.band {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 1rem;
+}
+
+.band__member {
+    color: white;
+    background-color: #411243;
+    font-family: "Bebas Neue";
+    font-weight: 300;
+    padding: 1rem;
+    text-align: center;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.band__img {
+    width: 100%;
+    border-radius: 100%;
+    border: 4px solid rgb(170, 36, 133);
+
+}
+
+.name {
+    font-family: "Sigmar One";
+    font-size: 2rem;
+    color: white;
+}
+
+/* text-beskrivelse- deres historie */
+
+.text {
+    color: white;
+    background-color: #411243;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 0 1rem;
+}
+
+.text__about__title {
+    font-family: "Sigmar One";
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.text__about {
+    padding: 1rem 1rem 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.text__about p,
+.band p {
+    font-family: "Noto Sans";
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+/* mobil-størrelse, med header-menu */
+
+@media (min-width:48em) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .frontpage__video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* tablet-størrelse */
+
+@media screen and (min-width: 640px) {
+
+    .mostpopular__title h1,
+    .gallery__title h1 {
+        font-size: 3rem;
+    }
+
+    .mostpopular h1 {
+        font-size: 2rem;
+    }
+
+    .riot--grrrl {
+        grid-column: span 2;
+    }
+
+    .erin--smith {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: span 2;
+    }
+
+    .erin--smith p {
+        padding: 1rem;
+    }
+
+    .erin--img {
+        align-self: center;
+    }
+
+    .band {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .text {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery__section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery_img {
+        height: 200px;
+    }
+
+    .mostpopular {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+
+    .listennow {
+        width: 20vw;
+    }
+
+    .frontpage__gallery {
+        width: 100vw;
+    }
+
+    .frontpage__gallery_img {
+        height: 200px;
+    }
+
+    .cover_left {
+        margin-top: 0;
+    }
+
+    .cover__cherry {
+        width: 100vw;
+        grid-column: span 2;
+    }
+
+    .header .img-logo {
+        height: 60px;
+    }
+
+    .upperfooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #411243;
+        justify-items: center;
+    }
+
+    .footer__links li {
+        padding: 0.5rem;
+        display: inline-block;
+    }
+
+    .footer__some {
+        align-self: center;
+    }
+}
+
+/* computer-størrelse */
+
+@media screen and (min-width: 960px) and (max-width: 1100px) {
+    .mostpopular h1 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .riot--grrrl {
+        grid-column: span 1;
+    }
+
+    .erin--smith {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+
+    .erin--smith p {
+        padding: 0;
+    }
+
+    .band {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .text {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery__section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery_img {
+        height: 300px;
+        opacity: 70%;
+    }
+
+    .frontpage__video {
+        margin-top: 0;
+    }
+
+    .mostpopular {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+    }
+
+    .listennow {
+        width: 13vw;
+    }
+
+    .cover__cherry {
+        width: 33vw;
+        grid-column: span 1;
+        padding: 0 1rem;
+    }
+
+    .frontpage__gallery {
+        margin: 0 0 1rem;
+    }
+
+    .frontpage__gallery_img {
+        height: 200px;
+    }
+
+    .cover_left {
+        display: none;
+    }
+
+    .header .img-logo {
+        height: 60px;
+    }
+
+    .cover_left1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #411243;
+        color: white;
+        width: 32vw;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .cover_left1 a {
+        text-decoration: none;
+        justify-self: center;
+        color: white;
+    }
+
+    .cover_left1 h1 {
+        text-align: center;
+    }
+}

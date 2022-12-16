@@ -1,0 +1,143 @@
+body {
+    background-color: lightgrey;
+    margin: 2rem;
+}
+/* navigation  */
+nav {
+    background-color: rgb(0, 200, 255);
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    top: 0%;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Roboto Slab";
+    padding: 0 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    transition: 0.5s;
+}
+nav ul li a:focus {
+    border-bottom: 2px solid white;
+}
+nav ul li a:hover {
+    opacity: 50%;
+}
+nav ul li a:visited {
+    color: rgb(240, 240, 240)
+}
+
+.fruit-collection {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.fruit__img {
+    max-width: 100%;
+}
+.fruit-collection {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.fruit {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+}
+
+.fruit__button {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.fruit__button--blue {
+    width: 100px;
+    border-radius: 60px;
+    background-color: rgb(0, 200, 255);
+    transition: 0.5s;
+}
+.fruit__button--blue:hover {
+    color: black;
+    opacity: 50%;
+}
+.fruit__button--yellow {
+    color: black;
+    border-radius: 60px;
+    background-color: yellow;
+    transition: 0.7s;
+}
+.fruit__button--yellow:hover {
+    color: yellow;
+    background-color: rgb(180, 0, 0);
+}
+.fruit__button--pink {
+    display: flex;
+    width: 100px;
+    border-radius: 60px;
+    background-color: pink;
+    transition: 0.7s;
+    align-self: end;
+    justify-content: center;
+
+}
+.fruit__button--pink:hover {
+    border: 3px solid pink;
+    width: 150px;
+    color: rgb(0, 180, 0);
+    background-color: transparent;
+}
+@media screen and (min-width: 640px) {
+    .fruit-collection {
+        grid-template-columns: 1fr 1fr;
+    }
+    .fruit--pink {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .fruit--pink img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .fruit__button--pink {
+        width: 200px;
+        font-size: 2rem;
+        grid-column-start: 3;
+        align-self: end;
+    }
+    .fruit__description--pink {
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .fruit-collection {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .fruit__button--pink {
+        width: 100px;
+        font-size: 1rem;
+        align-self: end;
+    }
+    .fruit--pink {
+        grid-column: span 1;
+        display: block;
+    }
+}

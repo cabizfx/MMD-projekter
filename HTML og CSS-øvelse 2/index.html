@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjem</title>
+    <link rel="icon" href="/images/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/jquery-3.6.2.min.js"></script>
+</head>
+<body class="hjem">
+    <!-- hamburger- menu/ linket: https://www.youtube.com/watch?v=sjrp1FEHnyA -->
+    <header class="header">
+        <a href="/index.html"><img class="img-logo" src="/images/logo.png" alt="Banner logo"></a>
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
+                <form class="menu__searchbar" action="" onsubmit="search">
+                    <input autocomplete="off" id="searchText" type="text" placeholder="Søg...">
+                    <button onclick="search()" type="button"><img src="/images/searchicon.png" alt=""></button>
+                </form>
+            </li>
+            <li class="hjem-nav"><a class="highlight" href="/index.html">Hjem</a></li>
+            <li><a href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </header>
+
+    <!-- hero-video -->
+    <section class="page__hero">
+        <img class="page__hero" src="/images/hero/velkommen_hero.png" alt="hero billede">
+    </section>
+    
+    <section class="frontpage__intro-section">
+        <h2>frederik cabizares hansen</h2>
+        <h1>Velkommen til!</h1>
+        <p>Velkommen til min hjemmeside, hvor jeg deler min ekspertise inden for HTML og CSS. Her vil du finde artikler og information om semantisk HTML, grid, flexbox og meget mere.
+            Semantisk HTML er vigtigt, fordi det hjælper med at organisere indholdet på din hjemmeside og gøre det mere tilgængeligt for brugerne og søgemaskinerne. Ved at bruge de rigtige HTML-tags, kan du også give mening til din kode og gøre det nemmere at vedligeholde.
+            Grid og flexbox er to kraftfulde teknologier, der gør det nemt at opbygge komplekse layouter på din hjemmeside. Grid er især nyttigt til at oprette avancerede, todimensionelle layouts, mens flexbox er mere velegnet til enkle, en-dimensionelle layouter.
+            På min hjemmeside vil du lære, hvordan man bruger disse teknologier effektivt og opnår professionelle resultater. Jeg vil også dække andre vigtige emner, såsom CSS-animationer, responsivt design og brug af præprocessorer som Sass og Less.
+            Tak fordi du besøger min hjemmeside, og jeg håber, at du vil finde de oplysninger, du søger. Hvis du har spørgsmål eller kommentarer, er du velkommen til at kontakte mig.</p>
+        <h1>Hvad er HTML?</h1>
+        <p>HTML står for "HyperText Markup Language" og er en standardiseret sprogbrug til at oprette og strukturere indholdet på websider. HTML består af en række tags, som angiver, hvordan forskellige dele af websiden skal præsenteres for brugeren. <br><br>
+
+            HTML blev oprindeligt udviklet i begyndelsen af ​​1990'erne som en del af det første webbrowsere og har sidenhen udviklet sig til at blive en vigtig del af webudviklingsprocessen. HTML gør det muligt at organisere indholdet på en webside i forskellige sektioner og angive, hvordan tekster, billeder, links og andre elementer skal vises og opføre sig. <br><br>
+            
+            HTML er et relativt let sprog at lære, og mange webudviklere bruger det som en grundlæggende byggesten i deres arbejde. Det understøtter også andre teknologier, såsom CSS og JavaScript, der gør det muligt at tilføje mere avancerede design- og interaktive funktioner til websider. HTML er også et vigtigt værktøj til at sikre, at websider er tilgængelige for mennesker med forskellige typer af enheder og skærmstørrelser, da det gør det muligt at skabe responsivt design, der tilpasser sig forskellige enheder og skærmstørrelser.</p>
+        <h1>Hvad er CSS?</h1>
+        <p>CSS står for "Cascading Style Sheets" og er et stilarkssprog, der bruges sammen med HTML til at definere layout og udseendet af websider. CSS gør det muligt at adskille formaterings- og stilinformation fra indholdet på en webside, hvilket gør det lettere at ændre udseendet af en webside uden at påvirke selve indholdet. <br><br>
+
+            Med CSS kan du styre elementer på websiden, såsom tekst, farver, baggrundsbilleder, kanter, skrifttyper og layout. Du kan også oprette komplekse layouter ved hjælp af CSS-grid og fleksible bokse, der gør det muligt at oprette dynamiske, responsive websider, der tilpasser sig forskellige skærmstørrelser og enheder. <br><br>
+            
+            CSS kan bruges i kombination med HTML og JavaScript for at oprette interaktive og avancerede websider. Med CSS-animationer og overgange kan du oprette animationer og bevægelser på en webside, mens CSS-variabler og tilpasninger gør det muligt at oprette fleksible designsystemer, der kan genbruges på tværs af en hel webside. <br><br>
+            
+            CSS er en vigtig del af moderne webudvikling, og næsten alle websider bruger det på en eller anden måde. Det er en relativt let sprog at lære, men kan også være meget kraftfuldt i hænderne på erfarne webudviklere.</p>
+        <h1>Se, hvad jeg kan indenfor kodning!</h1>
+        <p class="page__readmore-button"><a target="_blank" href="/kodning/index.html">Se her</a></p>
+    </section>
+
+    <!-- footer -->
+    <footer class="upperfooter">
+        <ul class="footer__some">
+            <li><a target="_blank" href="https://www.youtube.com/cabizfx"><img
+                        class="footericon" src="/images/some/youtube.png" alt="Link to YouTube"></a></li>
+            <li><a target="_blank"
+                    href="https://www.linkedin.com/in/frederik-cabizares-hansen/"><img
+                        class="footericon" src="/images/some/linkedin.png" alt="Link til min linkedin-profil"></a></li>
+            <li><a target="_blank" href="mailto:cabizares@hotmail.com"><img
+                        class="footericon" src="/images/some/mailto.png" alt="Send mig en mail"></a>
+            </li>
+            <li><a target="_blank" href="https://github.com/cabizfx"><img class="footericon"
+                        src="/images/some/github.png" alt="Link to GitHub-page"></a></li>
+        </ul>
+        <ul class="footer__links">
+            <li><a class="highlight" href="/index.html">Hjem</a></li>
+            <li><a href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 Frederik Cabizares Hansen - All Rights Reserved</p>
+    </footer>
+        <!-- pre-loading-inspiration https://www.youtube.com/watch?v=gttmqvZ4kYc&ab_channel=DSCode\ -->
+        <div class="pre-loader">
+            <img src="/images/logo.png" alt="">
+        </div>
+    <script>
+        $(window).on("load",function(){
+            setTimeout(() => {
+                $(".pre-loader").fadeOut("slow")
+            }, 500)
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No-, Low- & Procode</title>
+    <link rel="icon" href="/images/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/jquery-3.6.2.min.js"></script>
+</head>
+<body class="kodning">
+
+    <!-- hamburger- menu/ linket: https://www.youtube.com/watch?v=sjrp1FEHnyA -->
+    <header class="header">
+        <a href="/index.html"><img class="img-logo" src="/images/logo.png" alt="Banner logo"></a>
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
+                <form class="menu__searchbar" action=""">
+                    <input type="text" placeholder="Søg...">
+                    <button type="button"><img src="/images/searchicon.png" alt=""></button>
+                </form>
+            </li>
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </header>
+
+    <!-- hero-video -->
+    <section class="page__hero">
+        <img class="page__hero" src="/images/kodning/kodning-lowcode.png" alt="hero billede">
+    </section>
+    
+    <section class="frontpage__intro-section">
+        <h2>frederik cabizares hansen</h2>
+        <h1>Nocode, lowcode og procode - hvad er det?</h1>
+        <p>Nocode, lowcode og procode er nogle termer man bruger i kodningsverdenen. Det beskriver hvor vidt om det er et CMS system eller noget som er kodet fra bunden af - eller en blanding. De systemer bruges primært til at skabe hjemmesider, apps eller webapps.</p>
+        <h1>Nocode</h1>
+        <p>Nocode er en betegnelse som lever op til sit navn, det er nemlig et CMS-system som ikke indeholder kodning. Det vil sige at man ikke selv skal kode noget selv, man kan nøjes med at anvende nogle pre-made moduler og elementer - og i så fald templates, så du kan have en hjemmeside på få minutter - helt uden kondnings- eller designforståelse.</p>
+        <p>Deres findes et ton af nocode-værktøjer som f.eks Glide, Webflow, Shopify, Squarespace, Bubble osv. - Mange af disse platforme ligner virkelig meget hinanden, foreskellen er bare valg af templates, nogle har flere tilbygningsmoduler end andre. Mange af disse platforme har også egen database-integration - ellers kan man nemt koble sit site op på Google Sheets.</p>
+        <p>Vi har brugt no-code platformen; <a target="_blank" href="https://www.glideapps.com/">Glide-apps</a> til at bygge vores <a href="projekter-laanafkameraudstyr.html">WebApp til Lån af Kameraudstyr på EADania</a>. Vi fandt platformen meget brugervenlig og muligheder for mange forskellige muligheder ifht. templates og designvalg.</p>
+        <h1>Lowcode</h1>
+        <p>Low-code minder meget om no-code. Forskellen er bare at her - er der mulighed for at kode selv også - hvis du f.eks ikke kan finde det modul du mangler i din nocode-app, så kan du kode den selv og integrere den på dit site - uden problemer, du har også mulighed for at bruge lige hvilken database-driver du vil.</p>
+        <p>Nocode platformerne er oftest også kompatible med low-code, mange som f.eks Glide og WordPress kan man integrere sin egen kode både <a href="kodning-html.html">HTML</a>, <a href="kodning-css.html">CSS</a> og JavaScript.</p>
+        <h1>Procode</h1>
+        <p>Procode er hjemmesider som er kodet helt fra bunden af - uden CMS system, men kan tilkobles et CMS system, så brugeren let kan gå ind og ændre i data samt indhold. Procode er <a href="kodning-html.html">HTML</a>, <a href="kodning-css.html">CSS</a>, JavaScript (Bootstrap, Vue, React osv.), PHP, C# osv. I bund og grund er der intet visuelt når man bygger en procode-side. Alt skal kodes selv.</p>
+        <p>Fordelen ved procode er at man har 100% kontrol over hjemmesiden. Dog er ulempen at du selv skal hoste siden, samt hoste databasen - eller bruge en tredjepart cloud-database som f.eks <a target="_blank" href="https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-dk_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624389&adgroup=115749711103&gclid=Cj0KCQiAqOucBhDrARIsAPCQL1ZUsr52Ft1eVEKQECuRNc0wDjqYMF88WGeqTuXHyrXUOl6d8tXw-usaAo_WEALw_wcB">MongoDB</a>.</p>
+        <h1>Hva' ka' det?</h1>
+        <p>Både nocode, lowcode og procode bliver brugt til at skabe digtitale IT-løsninger. Hver løsning dækker forskellige behov.</p>
+        <h1>Hvor ka' jeg bruge det?</h1>
+        <p>Ude i erhvervslivet bruger man rigtig meget low-code og procode. Mange marketingbureauer bruger WordPress, når de laver hjemmesider til kunder - det er nemt at bygge siderne responsive - styler lige som man vil, uden kodning. Hvor der også er indbygget CMS-system, så kunden let kan gå ind og lave ændringer i hjemmesiden efter behov.</p>
+        <p>Procode er en dyrre løsning, da det tager meget længere tid at bygge - samt det tager også tid at vedligeholde hjemmesiden.</p>
+        <h1>Hvor ka' jeg læse mere om det?</h1>
+        <p class="page__readmore-button"><a target="_blank" href="https://www.sap.com/denmark/insights/what-is-low-code-no-code.html">Læs mere</a></p>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="upperfooter">
+        <ul class="footer__some">
+            <li><a target="_blank" href="https://www.youtube.com/cabizfx"><img
+                        class="footericon" src="/images/some/youtube.png" alt="Link to YouTube"></a></li>
+            <li><a target="_blank"
+                    href="https://www.linkedin.com/in/frederik-cabizares-hansen/"><img
+                        class="footericon" src="/images/some/linkedin.png" alt="Link til min linkedin-profil"></a></li>
+            <li><a target="_blank" href="mailto:cabizares@hotmail.com"><img
+                        class="footericon" src="/images/some/mailto.png" alt="Send mig en mail"></a>
+            </li>
+            <li><a target="_blank" href="https://github.com/cabizfx"><img class="footericon"
+                        src="/images/some/github.png" alt="Link to GitHub-page"></a></li>
+        </ul>
+        <ul class="footer__links">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 Frederik Cabizares Hansen - All Rights Reserved</p>
+    </footer>
+        <!-- pre-loading-inspiration https://www.youtube.com/watch?v=gttmqvZ4kYc&ab_channel=DSCode\ -->
+    <div class="pre-loader">
+        <img src="/images/logo.png" alt="">
+    </div>
+    <script>
+        $(window).on("load",function(){
+            $(".pre-loader").fadeOut("slow")
+        });
+    </script>
+</body>
+</html>

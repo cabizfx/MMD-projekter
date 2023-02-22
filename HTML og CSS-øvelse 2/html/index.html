@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="icon" href="/images/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/jquery-3.6.2.min.js"></script>
+</head>
+<body class="kodning">
+
+    <!-- hamburger- menu/ linket: https://www.youtube.com/watch?v=sjrp1FEHnyA -->
+    <header class="header">
+        <a href="/index.html"><img class="img-logo" src="/images/logo.png" alt="Banner logo"></a>
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
+                <form class="menu__searchbar" action=""">
+                    <input type="text" placeholder="Søg...">
+                    <button type="button"><img src="/images/searchicon.png" alt=""></button>
+                </form>
+            </li>
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </header>
+
+    <!-- hero-video -->
+    <section class="page__hero">
+        <img class="page__hero" src="/images/kodning/kodning-html.png" alt="hero billede">
+    </section>
+    
+    <section class="frontpage__intro-section">
+        <h2>frederik cabizares hansen</h2>
+        <h1>HTML - hvad er det?</h1>
+        <p>HTML er en forkortelse for Hyper Text Markup Language - og er et kodesprog som bruges til at indeholde - og strukturerer indhold på en hjemmeside ved hjælp at forskellige HTML-elementer.</p>
+        <p>De forskellige HTML-elementer består af HTML-tags som kan indeholde attribruttor. Et tag består af et "<" og slutter på et ">"</p>
+        <h1>Semantisk HTML</h1>
+        <p>Semantisk HTML skal give mening og man skal ikke bruge < div >’s. Alt skal give mening. Det hjælper også søgemaskinerne med at lave SEO. Så skal den kun lede efter sections, articles osv.  Handler om den rigtige rækkefølge på tingene. </p>
+        <p><b>< nav ></b> Navigation. Det bruger vi til vores menuer - vi linker videre til andre sider. Bliver ignoreret af oplæser, da den ved det er en menu. </p>
+        <p><b>< article ></b> Samling af indhold, der kan stå for sig selv. På britisk er det en genstand - ikke en avisartikel som f.eks i USA. Man har ofte forskellige articles. Åbenlys svar på hvad en article er - det skal give mening. Semantisk set, så er det bare en samling af noget. Selvstændige enheder. Articles kan have forskellige størrelser, f.eks article - large, medium og small. </p>
+        <p><b>< section ></b> - Det er ligesom kapitel - så en sematisk opdeling. Noget indhold der omhandler noget specifikt, så er det en section. Sections kan f.eks indholde articles. Sections har næsten ALTID en overskrift - det fortæller hvad sectionen handler om. Specielle section elements.</p>
+        <h1>Section elementer:</h1>
+        <p><b>< main ></b> - der hvor hovedindholdet er, dem er der kun 1 af. </p>
+        <p><b>< header ></b> - header, der indeholder logo, login, navgation. Indhold der skal introducere et eller andet, så er det en header. Det kan også være i en article eller en section. Header fortæller mere - f.eks introduktionsting. </p>
+        <p><b>< footer ></b> - det samme som header, bare omvendt. Man bruger til at afslutte med. Kan bruges i selve body, men også i article, sections osv. </p>
+        <p><b>< aside ></b> - Det er noget der står til siden for noget. F.eks en menu bar. Hvis man ser bort fra den visuelle det, så er det noget der er relateret til ens hovedindhold, med < aside > kan ikke stå alene uden hovedindhold - men hovedindholdet kan stå alene uden < aside >. < Aside > kan f.eks være et kommentarfelt.</p>
+        <p><b>< div ></b> - har ingen semantisk betydning - alt har en betydning, undtagen < div >. Screenreaders, Google, SEO forstår ikke < div >’s. Man skal undgå div - det skal bruges til noget visuelt eller .js. </p>
+        <h1>Hva' ka' det?</h1>
+        <p>HTML er bare en placeholder for indhold til ens hjemmeside - eller webapp. Ingen styling skal forekomme i HTML, selvom man godt kan ved at bruge < style >, men det er bedst at holde stylingen til <a href="kodning-css.html">CSS'en</a>, så hvis man skal have opdateret designet på siden, skal frontend-designeren ikke indi HTML og ændre noget.</style></stile></p>
+        <h1>Hvor ka' jeg bruge det?</h1>
+        <p>Man kan bruge HTMl til hjemmesider og webapps - samt semantisk HTML bruges især til SEO-optimering.</p>
+        <h1>Hvor ka' jeg læse mere om det?</h1>
+        <p class="page__readmore-button"><a target="_blank" href="https://www.nemprogrammering.dk/Tutorials/Startviden/teknologierne/html.php">Læs mere</a></p>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="upperfooter">
+        <ul class="footer__some">
+            <li><a target="_blank" href="https://www.youtube.com/cabizfx"><img
+                        class="footericon" src="/images/some/youtube.png" alt="Link to YouTube"></a></li>
+            <li><a target="_blank"
+                    href="https://www.linkedin.com/in/frederik-cabizares-hansen/"><img
+                        class="footericon" src="/images/some/linkedin.png" alt="Link til min linkedin-profil"></a></li>
+            <li><a target="_blank" href="mailto:cabizares@hotmail.com"><img
+                        class="footericon" src="/images/some/mailto.png" alt="Send mig en mail"></a>
+            </li>
+            <li><a target="_blank" href="https://github.com/cabizfx"><img class="footericon"
+                        src="/images/some/github.png" alt="Link to GitHub-page"></a></li>
+        </ul>
+        <ul class="footer__links">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 Frederik Cabizares Hansen - All Rights Reserved</p>
+    </footer>
+        <!-- pre-loading-inspiration https://www.youtube.com/watch?v=gttmqvZ4kYc&ab_channel=DSCode\ -->
+    <div class="pre-loader">
+        <img src="/images/logo.png" alt="">
+    </div>
+    <script>
+        $(window).on("load",function(){
+            $(".pre-loader").fadeOut("slow")
+        });
+    </script>
+</body>
+</html>

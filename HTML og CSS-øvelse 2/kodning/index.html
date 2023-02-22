@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodning</title>
+    <link rel="icon" href="/images/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/jquery-3.6.2.min.js"></script>
+</head>
+<body class="kodning">
+
+    <!-- hamburger- menu/ linket: https://www.youtube.com/watch?v=sjrp1FEHnyA -->
+    <header class="header">
+        <a href="../index.html"><img class="img-logo" src="/images/logo.png" alt="Banner logo"></a>
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
+                <form class="menu__searchbar" action=""">
+                    <input type="text" placeholder="Søg...">
+                    <button type="button"><img src="/images/searchicon.png" alt=""></button>
+                </form>
+            </li>
+            <li><a href="../index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </header>
+
+    <!-- hero-video -->
+    <section class="page__hero">
+        <img class="page__hero" src="/images/hero/kodning__hero.png" alt="hero billede">
+    </section>
+    
+    <section class="frontpage__intro-section">
+        <h2>frederik cabizares hansen</h2>
+        <h1>Kodning</h1>
+        <p>Kodning, også kendt som programmering, er processen med at oprette en sekvens af instruktioner, som en computer kan forstå og udføre. Disse instruktioner kan bruges til at skabe softwareapplikationer, hjemmesider, mobilapps, databaser og meget mere. <br><br>
+
+            Kodning er baseret på en række programmeringssprog, der hver især har deres egne syntaks, funktioner og formål. Disse sprog inkluderer populære sprog som Java, Python, C++, Ruby, JavaScript og mange flere. <br><br>
+            
+            Kodning kræver en kombination af logisk tænkning, problemløsning og kreativitet. Det er en proces med at identificere et problem eller en udfordring, bestemme den bedste måde at løse den på, og derefter skrive koden til at implementere løsningen. <br><br>
+            
+            Kodning er en vigtig færdighed i dagens digitale tidsalder og er efterspurgt i mange brancher, herunder teknologi, sundhedsvæsen, finans og underholdning. At lære at kode kan åbne døre for karrieremuligheder og give mulighed for at skabe innovative løsninger til fremtidens udfordringer.</p>
+        <h1>Refleksion</h1>
+        <p>Som multimediedesigner er det relevant at have kendskab til kodning, fordi det er en grundlæggende færdighed, der kræves for at skabe interaktive og visuelt tiltalende digitale oplevelser. <br><br>
+
+            Kendskab til kodning giver mulighed for at opbygge og tilpasse hjemmesider, apps og andre digitale projekter med en større grad af kontrol og fleksibilitet. Det gør det også muligt at kommunikere mere effektivt med andre medlemmer af et projektteam, der kan have specialiserede færdigheder inden for kodning og udvikling. <br><br>
+            
+            Som multimediedesigner kan kendskab til kodning også hjælpe med at skabe mere innovative og unikke designs, fordi det giver mulighed for at tænke mere teknisk og kreativt på samme tid. Endelig kan kendskab til kodning også hjælpe med at forbedre arbejdsprocesser og produktivitet ved at muliggøre automatisering af rutineopgaver og hurtigere prototyping af ideer. </p>
+    </section>
+    <section class="category-section">
+        <article class="category-article">
+            <a href="/html/index.html"><img src="/images/kodning/kodning-html.png" alt=""></a>
+        </article>
+        <article class="category-article">
+            <a href="/css/index.html"><img src="/images/kodning/kodning-css.png" alt=""></a>
+        </article>
+        <article class="category-article">
+            <a href="kodning-bem.html"><img src="/images/kodning/kodning-bem.png" alt=""></a>
+        </article>
+        <article class="category-article">
+            <a href="kodning-kodevalidering.html"><img src="/images/kodning/kodning-kodevalidering.png" alt=""></a>
+        </article>
+        <article class="category-article">
+            <a href="kodning-mobilefirst.html"><img src="/images/kodning/kodning-mobilefirst.png" alt=""></a>
+        </article>
+        <article class="category-article">
+            <a href="kodning-lowcode.html"><img src="/images/kodning/kodning-lowcode.png" alt=""></a>
+        </article>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="upperfooter">
+        <ul class="footer__some">
+            <li><a target="_blank" href="https://www.youtube.com/cabizfx"><img
+                        class="footericon" src="/images/some/youtube.png" alt="Link to YouTube"></a></li>
+            <li><a target="_blank"
+                    href="https://www.linkedin.com/in/frederik-cabizares-hansen/"><img
+                        class="footericon" src="/images/some/linkedin.png" alt="Link til min linkedin-profil"></a></li>
+            <li><a target="_blank" href="mailto:cabizares@hotmail.com"><img
+                        class="footericon" src="/images/some/mailto.png" alt="Send mig en mail"></a>
+            </li>
+            <li><a target="_blank" href="https://github.com/cabizfx"><img class="footericon"
+                        src="/images/some/github.png" alt="Link to GitHub-page"></a></li>
+        </ul>
+        <ul class="footer__links">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 Frederik Cabizares Hansen - All Rights Reserved</p>
+    </footer>
+        <!-- pre-loading-inspiration https://www.youtube.com/watch?v=gttmqvZ4kYc&ab_channel=DSCode\ -->
+    <div class="pre-loader">
+        <img src="/images/logo.png" alt="">
+    </div>
+    <script>
+        $(window).on("load",function(){
+            $(".pre-loader").fadeOut("slow")
+        });
+    </script>
+</body>
+</html>

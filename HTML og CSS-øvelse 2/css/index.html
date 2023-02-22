@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="icon" href="/images/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/jquery-3.6.2.min.js"></script>
+</head>
+<body class="kodning">
+
+    <!-- hamburger- menu/ linket: https://www.youtube.com/watch?v=sjrp1FEHnyA -->
+    <header class="header">
+        <a href="/index.html"><img class="img-logo" src="/images/logo.png" alt="Banner logo"></a>
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
+                <form class="menu__searchbar" action=""">
+                    <input type="text" placeholder="Søg...">
+                    <button type="button"><img src="/images/searchicon.png" alt=""></button>
+                </form>
+            </li>
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </header>
+
+    <!-- hero-video -->
+    <section class="page__hero">
+        <img class="page__hero" src="/images/kodning/kodning-css.png" alt="hero billede">
+    </section>
+    
+    <section class="frontpage__intro-section">
+        <h2>frederik cabizares hansen</h2>
+        <h1>CSS - hvad er det?</h1>
+        <p>CSS er Cascading Style Sheet - som kobles på HTML-fil(erne), det styrer ALT styling. Selve stylesheetet bruges til at gøre HTML'en brugervenlig samt at style ens indhold. CSS er ikke et programeringssprog, det er et styling/design-sprog.</p>
+        <h1>CSS-syntax</h1>
+        <p>Måden man skriver css på er meget lige til, først definerer man selectoren det er f.eks h1, p, a osv. fra HTML. Derefter er der property: valua; - det er hvad vil du gerne, og hvor meget?</p>
+        <h1>Selectors</h1>
+        <p>
+            Man kan både hente Element, Class og #ID fra HTML’en. 
+            F.eks:<br>
+            <b>Element:</b> h1, h2, p, a, osv. Så styler man alle h1'ere, h2'ere osv i HTML'en. <br>
+            <b>Class:</b> class=”baggrund” = .baggrund - Her kan du tage fra klasser. f.eks h1 class=”baggrund og p class=”baggrund”. Så kan du bruge samme styling på alt fra den class. <br>
+            <b>ID:</b> ID=”#bg” = #bg - ID’er er mere specifikke. Når du ændre noget ved et ID, så er det KUN det der bliver ændret. Ikke andet. Fordi ID er unikt. 
+        </p>
+        <h1>CSS Box model</h1>
+        <p class="questions">Margin - Margin edge <br>Border - Border edge<br> Padding - Padding edge<br> Content - Content edge</p>
+        <img src="/images/kodning/cssboxmodel.png" alt="">
+        <p class="questions">Padding - det er alt det vi har fra indholdskassen<br>Margin - er udadtil, til at skubbe de andre elementer. .</p>
+        <h1>Grid</h1>
+        <p>Grid er en property i HTML, til at opstille forskellige elementer i forhold til hinanden. Man kan dse det som et gitter - hvor indholdet er kasserne inde i griddet.</p>
+        <p>Grid fungerer ved at man anvender <b>display: grid;</b> i f.eks en section som er parrent. Derefter kan man i childrens ændre forskellige properties som f.eks grid-row eller grid-column, så kan man bruge span-x, som bestemmer hvor mange kasser i gitteret den skal sprede sig over.</p>
+        <p>Det er vigtigt at bruge classes, så man kan definere f.eks hvad section og articles de er. Hvis man vil style de forskellige bokse. så ville man give childrens et unikt navn f.eks class=”news”, så kan man ændre styling på alle .news i css. </p>
+        <p><b>Grid-properties til parrent</b></p>
+        <p><b>display: grid;</b> – bruger man til at vise et grid. <br> <b>grid-template-columns:</b> Hvor mange kolonner der skal være i griddet. Den kan også definere bredden af griddet. Man kombinere forskellige måleenheder, f.eks 1fr eller px. <br> <b>grid-template-rows:</b> Selve størrelserne på rækkerne. f.eks 80px 150px; I grid-template rows bliver ikke særlig tit brugt, da indholdet skal definere højden på rækkerne.  <br> <b>gap: 1rem;</b> - afstand mellem childs i et grid. <br> <b>justify-content:</b> Til at aligne grid-items inde i containeren horisontalt. Her kan space-evenly; bruges eller space-around;. space-between; Bestemmer alignment inde i griddet. Den laver ikke plads udenfor griddet som de andre. end; og start; til starten eller slutningn (højre eller venstre) <br> <b>align-tems</b>: Hvordan laver vi layout vertikalt. center; sætter indholdet i midten på den vertikale akse. Mange af værdierne går igen fra justify-content. <br></p>
+        <p><b>Grid-properties til children</b></p>
+        <p>For at definerer hvor en celle skal starte og slutte. Her kan man f.eks bruge X / X eller span. Eller 1 / span 3; at den skal starte ved celle 1 og udvidde sig 3.  og det samme gælder i rows (vertikalt). </p>
+        <p><b>Grid area:</b>  row / column / row-end / column-end<br> grid-column-start:  1 / 2;<br> grid-column-end: 2 / 3;<br> grid-row-start: 1 / 4<br> grid-row-end: 2 / 4<br> <b>justify-self:</b> Hvis der er luft i griddet - ændrer man placeringen inde i selve child’ets “luft”. Og det er horisontalt. <br> <b>align-self:</b> Det somme som self - bare vertikalt.</p>
+        <h1>Flexbox</h1>
+        <p>Flexbox eller display: flex; er mindst ligeså kraftigt som grid-layout. Her tager man alle childrens og modificerer deres block-element. Nu bliver alle elementer i en parrent opstillet ved siden af hinanden. Mulighederne med flexbox er uendelige.</p>
+        <p>De forskellige flex-item properties er: <b>order, flex-grow, flex-shrink, flex-basis, flex og align-self.</b></p>
+        <p><b>order</b> - bestemmer over hvor et item skal være i rækkefølgen<br>
+        <b>flex-grow</b> - bestemmer hvor meget child'et skal gro i forhold til de andre<br>
+        <b>flex-shrink</b> - bestemmer hvor meget childet skal trækkes sammen i forhold til de andre<br>
+        <b>flex-basis</b> - bestemmer specifikt størrelsen på et item.<br>
+        <b>align-self</b> - bestemmer specifikt hvor et item skal placeres i forhold til resten.</p>
+        <p>De forskellige flex-container properties er:<b> flex-direction, flex-wrap, flex-flow, justify-content, align-items og align-content</b></p>
+        <p>
+            <b>flex-direction</b> - bestemmer om items skal vende vertikalt eller horisontalt<br>
+            <b>flex-wrap</b> - er et property der kan gøre ens container responsiv, hvis der er for mange items på en række, så laver den selv en ny række og fortsætter.<br>
+            <b>flex-flow</b> - er en blanding af både flex-direction og flex-flow.<br>
+            <b>justify-content</b> - bestemmer hvor de forskellige items skal være placeret horisontalt<br>
+            <b>align-items</b> - bestemmer hvor vertikalt items skal være placeret. Hvis parrenten har en bestemt højde<br>
+            <b>align-content</b> - bruges til at bestemme justeringen af flex-linjerne.<br>
+        </p>
+        <h1>Hva' ka' det?</h1>
+        <p>CSS bruges til styling af både hjemmesider og webapps. Jeg har brugt css til alle projekterne her på semestret. Tjek <a href="projekter.html">projekter</a> og se hvad jeg har lavet ved brug af CSS.</p>
+        <h1>Hvor ka' jeg bruge det?</h1>
+        <p>CSS bliver brugt alle steder i branchen, alle steder hvor der laves hjemmesider, softwareløsninger eller apps.</p>
+        <h1>Hvor ka' jeg læse mere om det?</h1>
+        <p class="page__readmore-button"><a target="_blank" href="https://www.w3schools.com/css/">Læs mere</a></p>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="upperfooter">
+        <ul class="footer__some">
+            <li><a target="_blank" href="https://www.youtube.com/cabizfx"><img
+                        class="footericon" src="/images/some/youtube.png" alt="Link to YouTube"></a></li>
+            <li><a target="_blank"
+                    href="https://www.linkedin.com/in/frederik-cabizares-hansen/"><img
+                        class="footericon" src="/images/some/linkedin.png" alt="Link til min linkedin-profil"></a></li>
+            <li><a target="_blank" href="mailto:cabizares@hotmail.com"><img
+                        class="footericon" src="/images/some/mailto.png" alt="Send mig en mail"></a>
+            </li>
+            <li><a target="_blank" href="https://github.com/cabizfx"><img class="footericon"
+                        src="/images/some/github.png" alt="Link to GitHub-page"></a></li>
+        </ul>
+        <ul class="footer__links">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 Frederik Cabizares Hansen - All Rights Reserved</p>
+    </footer>
+        <!-- pre-loading-inspiration https://www.youtube.com/watch?v=gttmqvZ4kYc&ab_channel=DSCode\ -->
+    <div class="pre-loader">
+        <img src="/images/logo.png" alt="">
+    </div>
+    <script>
+        $(window).on("load",function(){
+            $(".pre-loader").fadeOut("slow")
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <link rel="icon" href="/images/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/jquery-3.6.2.min.js"></script>
+</head>
+<body class="kodning">
+
+    <!-- hamburger- menu/ linket: https://www.youtube.com/watch?v=sjrp1FEHnyA -->
+    <header class="header">
+        <a href="/index.html"><img class="img-logo" src="/images/logo.png" alt="Banner logo"></a>
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
+                <form class="menu__searchbar" action=""">
+                    <input type="text" placeholder="Søg...">
+                    <button type="button"><img src="/images/searchicon.png" alt=""></button>
+                </form>
+            </li>
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </header>
+
+    <!-- hero-video -->
+    <section class="page__hero">
+        <img class="page__hero" src="/images/kodning/kodning-bem.png" alt="hero billede">
+    </section>
+    
+    <section class="frontpage__intro-section">
+        <h2>frederik cabizares hansen</h2>
+        <h1>BEM-navngivning - hvad er det?</h1>
+        <p>BEM-navngivning eller Block Element Modifier er et værktøj til HTML og CSS som er vigtigt når det kommer til kode - samt styling. Det bliver blandt andet brugt til at når andre skal læse ens kode, så forstår de hvad de forskellige elementer er - og hvad de gør.</p>
+        <p>BEM hjælper med at gøre styling sheets mindre, da man sagtens kan se og forstå hvilke forskellige elementer der skal styles - måske flere af dem skal styles ens? - Så er det nemt at identificere de forskellige elementer</p>
+        <p><b>B</b>EM står for Block, det kan f.eks være header, nav, section osv.</p>
+        <p>B<b>E</b>M står for Elements, det kan f.eks være et element i en block, f.eks et list-item, en article i en section osv.</p>
+        <p>BE<b>M</b> står for Modifier, som f.eks kan være en state, f.eks checked, fixed, size big osv.</p>
+        <p class="questions">Et eksempel på at navngive en class efter BEM, lad os sige vi vil navngive søgebaren i nav-baren på denne side. Så ville jeg navngive den følgende</p>
+        <img src="/images/kodning/bem.png" alt="">
+        <p class="questions">Her beskriver vi hvilket block-element der er tale om, nemlig en form. Elementet er menuen og searchbaren er modifieren.</p>
+        <h1>Hva' ka' det?</h1>
+        <p>BEM er et værdifuldt værktøj og metode, til at finde rundt i sit eget kode, men også når man skal dele sin kode med andre - så kan de meget nemmere og hurtigere se og få et overblik over hele koden.</p>
+        <h1>Hvor ka' jeg bruge det?</h1>
+        <p>Jeg har brugt det i dette projekt samt <a href="projekter-bratmobile.html">Bratmobile-website</a>, hvor vi har prøvet at lave BEM-navngivning så godt som overhovedet muligt. Men man skal bruge det så meget man kan.</p>
+        <h1>Hvor ka' jeg læse mere om det?</h1>
+        <p class="page__readmore-button"><a target="_blank" href="https://getbem.com/introduction/">Læs mere</a></p>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="upperfooter">
+        <ul class="footer__some">
+            <li><a target="_blank" href="https://www.youtube.com/cabizfx"><img
+                        class="footericon" src="/images/some/youtube.png" alt="Link to YouTube"></a></li>
+            <li><a target="_blank"
+                    href="https://www.linkedin.com/in/frederik-cabizares-hansen/"><img
+                        class="footericon" src="/images/some/linkedin.png" alt="Link til min linkedin-profil"></a></li>
+            <li><a target="_blank" href="mailto:cabizares@hotmail.com"><img
+                        class="footericon" src="/images/some/mailto.png" alt="Send mig en mail"></a>
+            </li>
+            <li><a target="_blank" href="https://github.com/cabizfx"><img class="footericon"
+                        src="/images/some/github.png" alt="Link to GitHub-page"></a></li>
+        </ul>
+        <ul class="footer__links">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 Frederik Cabizares Hansen - All Rights Reserved</p>
+    </footer>
+        <!-- pre-loading-inspiration https://www.youtube.com/watch?v=gttmqvZ4kYc&ab_channel=DSCode\ -->
+    <div class="pre-loader">
+        <img src="/images/logo.png" alt="">
+    </div>
+    <script>
+        $(window).on("load",function(){
+            $(".pre-loader").fadeOut("slow")
+        });
+    </script>
+</body>
+</html>

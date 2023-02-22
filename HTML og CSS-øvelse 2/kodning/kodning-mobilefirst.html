@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile first</title>
+    <link rel="icon" href="/images/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/jquery-3.6.2.min.js"></script>
+</head>
+<body class="kodning">
+
+    <!-- hamburger- menu/ linket: https://www.youtube.com/watch?v=sjrp1FEHnyA -->
+    <header class="header">
+        <a href="/index.html"><img class="img-logo" src="/images/logo.png" alt="Banner logo"></a>
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <!-- menu-btn og nav-icon gør der er en bruger-menu og en checkbox -->
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
+                <form class="menu__searchbar" action=""">
+                    <input type="text" placeholder="Søg...">
+                    <button type="button"><img src="/images/searchicon.png" alt=""></button>
+                </form>
+            </li>
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </header>
+
+    <!-- hero-video -->
+    <section class="page__hero">
+        <img class="page__hero" src="/images/kodning/kodning-mobilefirst.png" alt="hero billede">
+    </section>
+    
+    <section class="frontpage__intro-section">
+        <h2>frederik cabizares hansen</h2>
+        <h1>Mobile-first - og responsivt design - hvad er det?</h1>
+        <p>Når vi koder hjemmesider er det vigtigt at vi starter med at kode - og designe til mobil først og fremmest. Grunden til det er at det er nemmere at skalerer en mobilside op til web - end web til mobil. På web har man meget mere plads - og det kan være svært at få alt indhold til at passe ned i mobilstørrelse.</p>
+        <p>En anden grund - er at mange brugere de faktisk besøger mobil-versionen af et website, da flere og flere begynder at bruge mobilteleofnen som søgemaskine - så det er bare virkelig vigtigt at man prioriterer at lave sin hjemmside fuldt ud responsiv.</p>
+        <p>Der er flere måder man kan lave sine hjemmesider responsive med f.eks <a href="kodning-css.html">flexbox</a> (flex-wrap) eller <a href="kodning-css.html">grid</a>. Men jeg bruger personligt selv en blanding af både flexbox, grid og media-queries - da jeg føler at jeg har mere kontrol.</p>
+        <h1>Responsivt design med media-queries</h1>
+        <p>Media queries er et værktøj i <a href="kodning-css.html">CSS</a> som gør det muligt at have forskellige stylings og properties i forskellige skærmstørrelser - ved at bruge <b>@media screen</b>, så derefter skal man definere variablerne <b>min-width</b> og <b>max-width</b>, det bestemmer så hvilken styling der skal være indenfor et bestemt pixel-spektrum. </p>
+        <p><b>Eksempel på brug af media-queries</b></p>
+        <img src="/images/kodning/mediaqueries.png" alt="">
+        <p class="questions">Som man kan se, så ændre baggrundsfarven på diverse skærmstørelser.</p>
+        <h1>Hva' ka' det?</h1>
+        <p>Jamen, media-queries kan bruges til at ændre styling i forskellige skærmstørrelser, men ydermere - så bruges det primært til at lave hjemmesider responsive.</p>
+        <h1>Hvor ka' jeg bruge det?</h1>
+        <p>Det kan bruges rigtig mange steder - alle de steder hvor man laver hjemmesider eller webapps, så skal man altid fokusere på mobile-first. Det har vi blandt andet gjort i følgende projekter: <a href="projekter-bif.html">Bjerringbro IF-redesign</a>, <a href="projekter-bratmobile.html">Bratmobile-webdesign</a> og <a href="projekter-lanaafkameraudstyr.html">EADania: Lån af kameraudstyr-app</a>.</p>
+        <h1>Hvor ka' jeg læse mere om det?</h1>
+        <p class="page__readmore-button"><a target="_blank" href="https://www.w3schools.com/Css/css3_mediaqueries_ex.asp">Læs mere</a></p>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="upperfooter">
+        <ul class="footer__some">
+            <li><a target="_blank" href="https://www.youtube.com/cabizfx"><img
+                        class="footericon" src="/images/some/youtube.png" alt="Link to YouTube"></a></li>
+            <li><a target="_blank"
+                    href="https://www.linkedin.com/in/frederik-cabizares-hansen/"><img
+                        class="footericon" src="/images/some/linkedin.png" alt="Link til min linkedin-profil"></a></li>
+            <li><a target="_blank" href="mailto:cabizares@hotmail.com"><img
+                        class="footericon" src="/images/some/mailto.png" alt="Send mig en mail"></a>
+            </li>
+            <li><a target="_blank" href="https://github.com/cabizfx"><img class="footericon"
+                        src="/images/some/github.png" alt="Link to GitHub-page"></a></li>
+        </ul>
+        <ul class="footer__links">
+            <li><a href="/index.html">Hjem</a></li>
+            <li><a class="highlight" href="/kodning/index.html">Kodning</a></li>
+        </ul>
+    </footer>
+    <footer class="underfooter">
+        <p>© 2023 Frederik Cabizares Hansen - All Rights Reserved</p>
+    </footer>
+        <!-- pre-loading-inspiration https://www.youtube.com/watch?v=gttmqvZ4kYc&ab_channel=DSCode\ -->
+    <div class="pre-loader">
+        <img src="/images/logo.png" alt="">
+    </div>
+    <script>
+        $(window).on("load",function(){
+            $(".pre-loader").fadeOut("slow")
+        });
+    </script>
+</body>
+</html>

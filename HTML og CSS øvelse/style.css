@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+.menu__list {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0;
+    z-index: 2;
+}
+
+.menu__list img {
+    height: 2rem;
+    width: auto;
+}
+
+.menu__list-item {
+    padding:  1rem;
+}
+
+.menu__list-item a {
+    text-decoration: none;
+    color: white;
+}
+.menu__list-item-img {
+    align-self: center;
+    flex: 1;
+}
+
+.hero__section {
+    height: 40vh;
+    width: 100vw;
+}
+.hero__section-overlay {
+    width: 100vw;
+    position: absolute;
+    height: 40vh;
+    backdrop-filter: blur(10px);
+    z-index: 0;
+}
+.hero__section-h1 {
+    position: absolute;
+    font-family: "Roboto Slab";
+    color: white;
+    font-weight: 600;
+    font-size: 5rem;
+    width: 100vw;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.hero__section-img {
+    height: 40vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -3;
+}
+.intro__section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10rem;
+}
+.intro__section h2 {
+    text-align: center;
+    padding: 1rem;
+}
+.pick__section {
+    display: flex;
+    width: 100vw;
+    gap: 5rem;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.pick__article {
+    background-color: cadetblue;
+    padding: 1rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+.pick__article h2, .pick__article p, .pick__article-button {
+    margin: 1rem 0;
+}
+.pick__article-button {
+    background-color: white;
+    font-family: "Bebas";
+    width: 5rem;
+    padding: 0.1rem;
+    color: royalblue;
+    border-radius: 1rem;
+    text-align: center;
+}
+.pick__article-button a {
+    text-decoration: none;
+}
